@@ -2,7 +2,7 @@
 #
 # See the cotire manual for usage hints.
 #
-#=============================================================================
+#=========================================================================
 # Copyright 2012-2018 Sascha Kratky
 #
 # Permission is hereby granted, free of charge, to any person
@@ -25,7 +25,7 @@
 # WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 # OTHER DEALINGS IN THE SOFTWARE.
-#=============================================================================
+#=========================================================================
 
 if(__COTIRE_INCLUDED)
 	return()

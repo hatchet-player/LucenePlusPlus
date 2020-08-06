@@ -1,0 +1,103 @@
+# lucene++ project build options
+#========================================================================
+
+
+# linker args
+#========================================================================
+option(
+    'ldflags',
+    type : 'array',
+    value : [
+        '-L/usr/local/lib',
+        '-L/usr/lib',
+        '-L/lib'],
+    description : 'Link flags')
+
+option(
+    'cxxflags',
+    type : 'array',
+    value : [
+        '-Wno-pedantic',
+        '-Wdeprecated-declarations',
+        '-Wno-non-virtual-dtor',
+        '-Wno-unused-parameter'],
+    description : 'C build flags')
+
+option(
+    'with_demo',
+    type : 'boolean',
+    value : 'true',
+    description : 'Build lucene++ demo.')
+
+option(
+    'with_tests',
+    type : 'boolean',
+    value : 'true',
+    description : 'run lucene++ tests.')
+
+option(
+    'with_docs',
+    type : 'boolean',
+    value : 'true',
+    description : 'Build lucene++ docs.')
+
+
+# build options
+#========================================================================
+option(
+    'use_libstemmer_utf8',
+    type : 'boolean',
+    value : 'true',
+    description : 'internal build flag.')
+
+option(
+    'enable_cyclic_check',
+    type : 'boolean',
+    value : 'true',
+    description : 'internal build flag.')
+
+
+# documentation options
+#========================================================================
+
+option(
+    'docs_gen_html',
+    type : 'string',
+    value : 'YES',
+    description : 'build doxygen html (YES/NO).')
+
+option(
+    'docs_gen_html_help',
+    type : 'string',
+    value : 'NO',
+    description : 'build doxygen html help (YES/NO).')
+
+option(
+    'docs_gen_latex',
+    type : 'string',
+    value : 'NO',
+    description : 'build doxygen LaTeX (YES/NO).')
+
+option(
+    'docs_gen_latex',
+    type : 'string',
+    value : 'NO',
+    description : 'build doxygen html help (YES/NO).')
+
+option(
+    'docs_gen_man',
+    type : 'string',
+    value : 'NO',
+    description : 'build doxygen manpages (YES/NO).')
+
+option(
+    'docs_gen_rtf',
+    type : 'string',
+    value : 'NO',
+    description : 'build doxygen rtf (YES/NO).')
+
+option(
+    'docs_gen_xml',
+    type : 'string',
+    value : 'NO',
+    description : 'build doxygen xml (YES/NO).')

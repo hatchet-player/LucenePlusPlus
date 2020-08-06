@@ -16,11 +16,22 @@ Components
 - searchfiles (demo)
 
 
+
+
 Useful Resources
 ----------------
 
-Official [Java Lucene](http://lucene.apache.org/java/docs/index.html) - useful links and documentation relevant to Lucene and lucene++.
-[Lucene in Action](https://www.amazon.com/dp/1932394281/) by Otis Gospodnetic and Erik Hatcher.
+Official [Java Lucene](http://lucene.apache.org/java/docs/index.html) - useful links and 
+documentation relevant to Lucene and lucene++. [Lucene in Action](https://www.amazon.com/dp/1932394281/) 
+by Otis Gospodnetic and Erik Hatcher.
+
+
+
+
+Build Instructions
+------------------
+
+instuctions for building Lucene++ can be found in doc/BUILDING  
 
 
 
@@ -28,9 +39,10 @@ Official [Java Lucene](http://lucene.apache.org/java/docs/index.html) - useful l
 To run unit test suite
 ----------------------
 
-lucene_tester is built using the [Google Testing Framework](https://code.google.com/p/googletest/) and is launched by the following command::
+lucene_tester is built using the [Google Testing Framework](https://code.google.com/p/googletest/) 
+and is launched by the following command::
 ```
-    $ build/src/test/lucene++-tester
+    $ ./build/src/test/lucene++-tester
 ```
 Command options can be discovered by supplying `--help`.
 
@@ -49,7 +61,9 @@ Once the indexer has finished, you can query the index using searchfiles
     searchfiles.exe -index <directory you stored the index in>
 
 This uses an interactive command for you to enter queries, type a query to search the index press enter and you'll see the results.
-	
+
+
+
 
 Acknowledgements
 ----------------
